@@ -10,6 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=BIZ+UDGothic&family=Cardo:ital,wght@0,400;0,700;1,400&family=Cute+Font&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" 
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
 </head>
 <body>
  <div class="container">
@@ -17,7 +18,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     <div class="sidebar">
     <div class="wrapper">
         <div class="dashboard">
-            <p><i class="fa-solid fa-grip"></i>
+            <p><span class="mdi mdi-view-dashboard"></span>
             Dashboard
         </p> 
         </div>
@@ -40,12 +41,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     <div class="header">
       <div class="box">
         <div class="search">
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <span class="mdi mdi-magnify"></span>
             <p class="search-bar"></p>
         </div>
         <div class="notif">
         <ul class="left">
-            <li><i class="fa-regular fa-bell"></i></li>
+            <li><span class="mdi mdi-bell-ring-outline" id="bell"></span></li>
             <li> <img src="./svg/cat-sunglasses.jpg" alt="cat-wearing glasess" id="catone"></li>
             <li id="name">Michonne Grimes</li>
         </ul>
@@ -62,77 +63,113 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
             </div>
         </div>
         <div class="boxtwo">
-            <p>New</p>
-            <p>Upload</p>
-            <p>Share</p>
+            <p class="new"><span>New</span></p>
+            <p class="new">Upload</p>
+            <p class="new">Share</p>
         </div>
     </div>
-
+    
+   
     <div class="project">
+        <h2 class="ptitle">Your Projects</h2> <br><br>
         <div class="cards">
-            <p class="title">Super Cool Projec</p>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+            <p class="title">Super Cool Project</p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+            </p>
+            <p class="picones"> 
+                <span class="mdi mdi-star-plus-outline"></span>
+                <span class="mdi mdi-eye-plus-outline"></span>
+                <span class="mdi mdi-account-details-outline"></span>
+            </p>
         </div>
         <div class="cards">
             <p class="title">Less Cool Project</p>
             <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. </p>
+            <p class="picones"> 
+                <span class="mdi mdi-star-plus-outline"></span>
+                <span class="mdi mdi-eye-plus-outline"></span>
+                <span class="mdi mdi-account-details-outline"></span>
+            </p>
         </div>
         <div class="cards">
             <p class="title">Impossible App</p>
-            <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. </p>
+            <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.  </p> <br>
+            <p class="picones"> 
+                <span class="mdi mdi-star-plus-outline"></span>
+                <span class="mdi mdi-eye-plus-outline"></span>
+                <span class="mdi mdi-account-details-outline"></span>
+            </p>
         </div>
         <div class="cards">
             <p class="title">Easy Peasy App</p>
-            <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</p>
+            <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Integer tincidunt. </p> <br>
+            <p class="picones"> 
+                <span class="mdi mdi-star-plus-outline"></span>
+                <span class="mdi mdi-eye-plus-outline"></span>
+                <span class="mdi mdi-account-details-outline"></span>
+            </p>
         </div>
         <div class="cards">
             <p class="title">Ad Blocker</p>
-            <p>Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim</p>
+            <p>Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. </p> <br>
+            <p class="picones"> 
+                <span class="mdi mdi-star-plus-outline"></span>
+                <span class="mdi mdi-eye-plus-outline"></span>
+                <span class="mdi mdi-account-details-outline"></span>
+            </p>
         </div>
         <div class="cards">
             <p class="title">Money Maker</p>
-            <p>Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi.</p>
+            <p>Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. </p> <br>
+            <p class="picones"> 
+                <span class="mdi mdi-star-plus-outline"></span>
+                <span class="mdi mdi-eye-plus-outline"></span>
+                <span class="mdi mdi-account-details-outline"></span>
+            </p>
         </div>
     </div>
+    
 
     <div class="announce">
-        <div class="subject">
-            <p class="heading">Site Maintenance</p>
-            <p>Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero...</p>
+        <h2 class="atitle">Announcements</h2>
+        <div class="awrap">
+        <div class="subject one">
+            <p class="heading ">Site Maintenance</p>
+            <p>Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero... <br> <br></p>
         </div>
-        <div class="subject">
-            <p class="heading">Community Share Day</p>
-            <p> Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus...</p>
+        <div class="subject two">
+            <p class="heading ">Community Share Day</p>
+            <p> Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus... <br><br></p>
         </div>
-        <div class="subject">
+        <div class="subject three">
             <p class="heading">Updated Privacy Policy</p>
             <p>Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet...</p>
         </div>
     </div>
-
-    <div class="trending">
-        <div class="usernames">
-            <p>image</p>
-            <p>@tegan</p>
-            <p>World Peace Builder</p>
-        </div>
-        <div class="usernames">
-            <p>image</p>
-            <p>@morgan</p>
-            <p>Super Cool project</p>
-        </div>
-        <div class="usernames">
-            <p>image</p>
-            <p>@kendall</p>
-            <p>Life Changing App</p>
-        </div>
-        <div class="usernames">
-            <p>image</p>
-            <p>@alex</p>
-            <p>No Traffic Maker</p>
-        </div>
     </div>
 
+    <div class="trending">
+        <h2>Trending</h2>
+        <div class="twrap">
+        <div class="usernames one">
+            <p><img src="./svg/ribbon-cat.jpg" alt="ribbon-cat" class="tcats"></p>
+            <p class="tnames">@tegan <br>World Peace Builder</p>
+        </div>
+        <div class="usernames">
+            <p><img src="./svg/cat-sunglasses.jpg" alt="cat-sunglasses" class="tcats"></p>
+            <p class="tnames">@morgan <br>Super Cool project</p>
+        </div>
+        <div class="usernames">
+            <p><img src="./svg/tongue-cat.jpg" alt="tongue-cat" class="tcats"></p>
+            <p class="tnames">@kendall <br>Life Changing App</p>
+        </div>
+        <div class="usernames">
+            <p><img src="./svg/panda-cat.jpg" alt="panda-cat" class="tcats"></p>
+            <p class="tnames">@alex <br>No Traffic Maker</p>
+        </div>
+    </div>
+    </div>
  </div>   
 </body>
 </html>
